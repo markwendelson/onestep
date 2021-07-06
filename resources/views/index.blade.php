@@ -57,7 +57,7 @@
                         <span class="input-group-addon">
                             <img src="{{asset('images/kakaotalk-icon.png')}}" height="60">
                         </span>
-                        <input type="text" class="form-control" style="font-size: 2.5em" value="{{$settings->where('name','kakaotalk')->first()->value}}">
+                        <span class="form-control" style="font-size: 2.5em;text-align:left;padding-top:10px;">{{$settings->where('name','kakaotalk')->first()->value}}</span>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                         <span class="input-group-addon">
                             <img src="{{asset('images/kakaotalk-icon.png')}}" height="60">
                         </span>
-                        <input type="text" class="form-control" style="font-size: 2.5em" value="{{$settings->where('name','chat_room_link')->first()->value}}">
+                        <a href="{{$settings->where('name','chat_room_link')->first()->value}}" class="form-control" style="font-size: 2.5em;text-align:left;padding-top:10px;" target="_blank">오픈채팅방 입장</a>
                     </div>
                 </div>
             </div>
