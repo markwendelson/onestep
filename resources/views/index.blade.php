@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 <link href="css/import.css" rel="stylesheet" type="text/css" />
 <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-<title>스타포렉스 본사</title>
+<title>PRIME INVEST</title>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Ads: 452729914

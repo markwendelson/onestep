@@ -33,7 +33,7 @@
                                     <tr>
                                         <td>
                                             <div class="form-group">
-                                                <label>오팅채팅방링크넣기</label>
+                                                <label>오픈채팅방링크넣기</label>
                                                 <input type="text" class="form-control">
                                             </div>
                                         </td>
@@ -60,7 +60,7 @@
                                     <tr>
                                         <td>
                                             <div class="form-group">
-                                                <label>사이트링크변경하기 / 회원가입에 링크가 적용됩니다</label>
+                                                <label>사이트링크변경하기 / <span style="color:red">회원가입에 링크가 적용됩니다</span></label>
                                                 <input type="text" class="form-control">
                                             </div>
                                         </td>
