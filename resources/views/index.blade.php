@@ -25,7 +25,7 @@
     <div class="col-md-8 mx-auto">
         <nav class="navbar navbar-light bg-light" style="background-color: teal!important">
             <div class="container-fluid pt-2 pb-2">
-                <a class="navbar-brand" href="#" style="font-size:4em; color:white;">{{ config('app.name').' '.$settings->where('name','branch')->first()->value}} </a>
+                <a class="navbar-brand" href="#" style="font-size:4em; color:white;">{{$settings->where('name','branch')->first()->value}} </a>
                 <a class="right" href="{{$settings->where('name','link')->first()->value ?? '#'}}" target="_blank" style="font-size:4em; color:white;">회원가입</a>
             </div>
         </nav>
@@ -39,7 +39,7 @@
             </div>
             <div class="col-md-12 mx-auto mt-4" style="display:block;color:white;">
                 <span style="font-size: 4.75em;">빠르고 정확한</span>
-                <span class="text-success" style="font-size: 4.75em;">{{ config('app.name') }}</span>
+                {{-- <span class="text-success" style="font-size: 4.75em;">{{ config('app.name') }}</span> --}}
                 <span style="font-size: 5.75em;">{{$settings->where('name','branch')->first()->value}}</span>
             </div>
             <div class="col-md-12 mx-auto mt-4" style="display:block;color:white;">
