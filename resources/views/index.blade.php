@@ -26,7 +26,7 @@
         <nav class="navbar navbar-light bg-light" style="background-color: teal!important">
             <div class="container-fluid pt-2 pb-2">
                 <a class="navbar-brand" href="#" style="font-size:4em; color:white;">{{ config('app.name').' '.$settings->where('name','branch')->first()->value}} </a>
-                <a class="right" href="#" style="font-size:4em; color:white;">회원가입</a>
+                <a class="right" href="{{$settings->where('name','link')->first()->value ?? '#'}}" style="font-size:4em; color:white;">회원가입</a>
             </div>
         </nav>
 
@@ -51,23 +51,23 @@
             <div class="col-md-12 mx-auto mt-4" style="display:block;color:white;">
                 <span style="font-size: 3.25em;">전문가와 함께 수익 보실수 있습니다.</span>
             </div>
-            <div class="col-md-8 mx-auto mt-4">
+            <div class="col-md-8 mx-auto mt-5 mb-5">
                 <div class="form-group-lg">
                     <div class="input-group">
                         <span class="input-group-addon">
                             <img src="{{asset('images/kakaotalk-icon.png')}}" height="60">
                         </span>
-                        <input type="text" class="form-control" value="{{$settings->where('name','kakaotalk')->first()->value}}">
+                        <input type="text" class="form-control" style="font-size: 2.5em" value="{{$settings->where('name','kakaotalk')->first()->value}}">
                     </div>
                 </div>
             </div>
-            <div class="col-md-8 mx-auto mt-4">
+            <div class="col-md-8 mx-auto mt-5 mb-5">
                 <div class="form-group-lg">
                     <div class="input-group">
                         <span class="input-group-addon">
                             <img src="{{asset('images/kakaotalk-icon.png')}}" height="60">
                         </span>
-                        <input type="text" class="form-control" value="{{$settings->where('name','chat_room_link')->first()->value}}">
+                        <input type="text" class="form-control" style="font-size: 2.5em" value="{{$settings->where('name','chat_room_link')->first()->value}}">
                     </div>
                 </div>
             </div>
