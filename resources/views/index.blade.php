@@ -52,22 +52,23 @@
                 <span style="font-size: 3.25em;">전문가와 함께 수익 보실수 있습니다.</span>
             </div>
             <div class="col-md-8 mx-auto mt-5 mb-5">
-                <div class="form-group-lg">
+                <div class="form-group-lg" style="background-color: white">
                     <div class="input-group">
                         <span class="input-group-addon">
-                            <img src="{{asset('images/kakaotalk-icon.png')}}" height="60">
+                            <img src="{{asset('images/kakaotalk-icon.png')}}" height="80">
                         </span>
-                        <span class="form-control" style="font-size: 2.5em;text-align:left;padding-top:10px;">{{$settings->where('name','kakaotalk')->first()->value}}</span>
+                        <label style="color:maroon;font-size: 1.75em;text-align:left;padding-top:10px; padding-right:10px;">카톡<br>상담</label>
+                        <span class="form-control" style="color:maroon;font-size: 3.5em;text-align:left;padding-top:10px;padding-left:20px;">{{$settings->where('name','kakaotalk')->first()->value}}</span>
                     </div>
                 </div>
             </div>
             <div class="col-md-8 mx-auto mt-5 mb-5">
-                <div class="form-group-lg">
+                <div class="form-group-lg" style="background-color: white">
                     <div class="input-group">
                         <span class="input-group-addon">
-                            <img src="{{asset('images/kakaotalk-icon.png')}}" height="60">
+                            <img src="{{asset('images/kakaotalk-icon.png')}}" height="80">
                         </span>
-                        <a href="{{$settings->where('name','chat_room_link')->first()->value}}" class="form-control" style="font-size: 2.5em;text-align:left;padding-top:10px;" target="_blank">오픈채팅방 입장</a>
+                        <a href="{{$settings->where('name','chat_room_link')->first()->value}}" class="form-control" style="color:maroon;font-size: 3.5em;text-align:left;padding-top:15px;padding-left:20px;" target="_blank">오픈채팅방 입장</a>
                     </div>
                 </div>
             </div>
