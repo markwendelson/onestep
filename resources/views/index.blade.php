@@ -26,7 +26,7 @@
         <nav class="navbar navbar-light bg-light" style="background-color: teal!important">
             <div class="container-fluid pt-2 pb-2">
                 <a class="navbar-brand" href="#" style="font-size:4em; color:white;">{{ config('app.name').' '.$settings->where('name','branch')->first()->value}} </a>
-                <a class="right" href="{{route('register')}}" style="font-size:4em; color:white;">회원가입</a>
+                <a class="right" href="#" style="font-size:4em; color:white;">회원가입</a>
             </div>
         </nav>
 
