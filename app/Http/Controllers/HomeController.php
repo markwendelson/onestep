@@ -23,6 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $settings = \DB::table('settings')->get();
+        return view('home', compact('settings'));
     }
 }
