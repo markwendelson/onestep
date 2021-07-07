@@ -38,37 +38,9 @@
         </nav>
 
         <div class="col-md-12 text-center pt-5" style="display:block;background:url(images/img_bg.png) no-repeat; background-size:cover;">
-            <div class="col-md-12 mx-auto" style="display:block;color:white;">
-                <span style="font-size: 2.5em;">안전한 마진거래 플래폼 OPEN</span>
-            </div>
-            <div class="col-md-12 mx-auto mt-4" style="display:block;color:white;">
-                <span style="font-size: 3.25em;">FX마진거래 , 빠르고 쉽게 간편하게</span>
-            </div>
-            <div class="col-md-12 mx-auto mt-4" style="display:block;color:white;">
-                <span style="font-size: 4.75em;">빠르고 정확한</span>
-                {{-- <span class="text-success" style="font-size: 4.75em;">{{ config('app.name') }}</span> --}}
-                <span style="font-size: 5.75em;">{{$settings->where('name','branch')->first()->value}}</span>
-            </div>
-            <div class="col-md-12 mx-auto mt-4" style="display:block;color:white;">
-                <span style="font-size: 3.75em;" class="text-warning">가입하시면 리딩방안내드립니다</span>
-            </div>
-            <div class="col-md-12 mx-auto mt-4" style="display:block;color:white;">
-                <span style="font-size: 2.75em;">수많은 전문가가 실시간 리딩 해드리고 있어서</span>
-            </div>
-            <div class="col-md-12 mx-auto mt-4" style="display:block;color:white;">
-                <span style="font-size: 3.25em;">전문가와 함께 수익 보실수 있습니다.</span>
-            </div>
 
             <div class="col-md-12 mx-auto mt-4" style="display:block;color:white;">
-                <span style="font-size: 3.25em;">재테크를 시작해야 하는 이유</span>
-            </div>
-
-            <div class="col-md-12 mx-auto mt-4" style="display:block;color:white;">
-                <span style="font-size: 9em;font-weight:bolder">재테크가 필요한 삶</span>
-            </div>
-
-            <div class="col-md-12 mx-auto mt-4" style="display:block;color:white;">
-                <span style="font-size: 3.25em;">코로나19 시대에 재테크 한 종목정도는 필수 입니다.</span>
+                <span style="font-size: 3.75em;" class="text-warning">대박나는 하루 되세요 !!!</span>
             </div>
 
             {{-- video --}}
