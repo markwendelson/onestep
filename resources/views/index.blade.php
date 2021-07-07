@@ -62,7 +62,7 @@
             padding-top: 30px!important;
         }
         .codename {
-            font-size: 3.2em!important;
+            font-size: 1.8em!important;
         }
     }
 
