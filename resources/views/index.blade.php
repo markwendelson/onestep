@@ -75,6 +75,18 @@
             <div class="col-md-12 mx-auto mt-4" style="display:block;color:white;">
                 <span style="font-size: 3.25em;">가입코드 [ {{$settings->where('name','codename')->first()->value}} ] 필수기재</span>
             </div>
+
+            <div class="col-md-12 mx-auto mt-4" style="display:block;color:white;">
+                <span style="font-size: 3.25em;">재테크를 시작해야 하는 이유</span>
+            </div>
+
+            <div class="col-md-12 mx-auto mt-4" style="display:block;color:white;">
+                <span style="font-size: 9em;font-weight:bolder">재테크가 필요한 삶</span>
+            </div>
+
+            <div class="col-md-12 mx-auto mt-4" style="display:block;color:white;">
+                <span style="font-size: 3.25em;">코로나19 시대에 재테크 한 종목정도는 필수 입니다.</span>
+            </div>
         </div>
     </div>
 
