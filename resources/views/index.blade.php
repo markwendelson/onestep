@@ -15,6 +15,85 @@
     .clearfix {
         height: 100px;
     }
+
+    @media (min-width: 1200px){
+        .h1, h1 {
+            font-size: 4.5rem;
+        }
+
+        .h2, h2 {
+            font-size: 2.5rem;
+        }
+
+        .kakaotalk {
+            font-size: 3.5em;
+        }
+
+        .kakaotalkb {
+            font-size: 4.5em;
+        }
+
+    }
+
+    @media (width: 280px){
+        .kakaotalk {
+            font-size: 2.42em!important;
+            padding-left:10px!important;
+            padding-top:20px!important;
+        }
+        .codename {
+            font-size: 1.7em!important;
+            text-align:center!important;
+        }
+    }
+    @media (width: 360px){
+        .codename {
+            font-size: 2.25em!important;
+            text-align:center!important;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1242px) {
+        .label2 {
+            font-size: 1.48em!important;
+        }
+        .kakaotalkb {
+            font-size: 2em!important;
+            padding-top: 30px!important;
+        }
+        .codename {
+            font-size: 3.2em!important;
+        }
+    }
+
+    .label1 {
+        color:maroon;
+        text-align:left;
+        /* padding-top:10px; */
+        padding-right:10px;
+    }
+
+    .kakaotalk {
+        font-size: 3.5em;
+        color:maroon;
+        text-align:left;
+        padding-top:10px;
+        padding-left:20px;
+    }
+
+    .kakaotalkb {
+        font-size: 3.5em;
+        color:maroon;
+        text-align:left;
+        padding-top:15px;
+        padding-left:20px;
+    }
+
+    .codename {
+        font-size: 3.25em;
+        text-align:left;
+        padding-top:15px;
+    }
 </style>
 </head><!--popup 소스-->
 
@@ -28,7 +107,7 @@
     }
 </script>
 
-<div class="container">
+<div class="container-fluid">
     <div class="col-md-8 mx-auto">
         {{-- <nav class="navbar navbar-light bg-light" style="background-color: teal!important">
             <div class="container-fluid pt-2 pb-2">
@@ -40,7 +119,7 @@
         <div class="col-md-12 text-center pt-5" style="display:block;background:url(images/img_bg.png) no-repeat; background-size:cover;">
 
             <div class="col-md-12 mx-auto mt-4" style="display:block;color:white;">
-                <span style="font-size: 3.75em;" class="text-warning">대박나는 하루 되세요 !!!</span>
+                <h1 class="text-warning">대박나는 하루 되세요 !!!</h1>
             </div>
 
             {{-- video --}}
@@ -71,10 +150,10 @@
                 <div class="form-group-lg" style="background-color: white">
                     <div class="input-group">
                         <span class="input-group-addon">
-                            <img src="{{asset('images/kakaotalk-icon.png')}}" height="80">
+                            <img class="img-responsive" src="{{asset('images/kakaotalk-icon.png')}}" height="80">
                         </span>
-                        <label style="color:maroon;font-size: 1.75em;text-align:left;padding-top:10px; padding-right:10px;">카톡<br>상담</label>
-                        <span class="form-control" style="color:maroon;font-size: 3.5em;text-align:left;padding-top:10px;padding-left:20px;">{{$settings->where('name','kakaotalk')->first()->value}}</span>
+                        <h2 class="label1 my-auto">카톡<br>상담</h2>
+                        <span class="form-control kakaotalk">{{$settings->where('name','kakaotalk')->first()->value}}</span>
                     </div>
                 </div>
             </div>
@@ -83,9 +162,9 @@
                 <div class="form-group-lg" style="background-color: white">
                     <div class="input-group">
                         <span class="input-group-addon">
-                            <img src="{{asset('images/kakaotalk-icon.png')}}" height="80">
+                            <img class="img-responsive" src="{{asset('images/kakaotalk-icon.png')}}" height="80">
                         </span>
-                        <a href="{{$settings->where('name','chat_room_link')->first()->value ?? '#'}}" class="form-control" style="color:maroon;font-size: 3.5em;text-align:left;padding-top:15px;padding-left:20px;" target="_blank">오픈채팅방 입장</a>
+                        <a href="{{$settings->where('name','chat_room_link')->first()->value ?? '#'}}" class="form-control kakaotalk" style="color:maroon;font-size: 3.5em;text-align:left;padding-top:15px;padding-left:20px;" target="_blank">오픈채팅방 입장</a>
                     </div>
                 </div>
             </div>
@@ -93,10 +172,10 @@
             <div class="col-md-10 mx-auto mt-4" style="display:block;color:white;">
                 <div class="row ml-5 mr-5">
                     <div class="col-md-4" style="background-color:rgb(4, 167, 18);">
-                        <a href="{{$settings->where('name','link')->first()->value}}" class="form-control bg-transparent border-0 text-white" style="font-size: 3.5em;text-align:center;padding-top:15px;" target="_blank">회원가입</a>
+                        <a href="{{$settings->where('name','link')->first()->value}}" class="form-control bg-transparent border-0 text-white" style="font-size: 2.5vw;text-align:center;" target="_blank">회원가입</a>
                     </div>
-                    <div class="col-md-8">
-                        <span class="form-control bg-transparent border-0 text-white" style="font-size: 3.25em;text-align:left;padding-top:15px;">가입코드 [ {{$settings->where('name','codename')->first()->value}} ] 필수기재</span>
+                    <div class="col-md-8 my-auto">
+                        <span class="w-100 bg-transparent border-0 text-white codename">가입코드 [ {{$settings->where('name','codename')->first()->value}} ] 필수기재</span>
                     </div>
                 </div>
 
@@ -112,20 +191,20 @@
                     </div>
                 </div>
 
-                <div class="col-md-12 col-sm-12">
-                    <div class="row ml-5 mr-5 mb-5 mt-5">
-                        <div class="col-md-4">
-                            <div style="color: red;font-size: 1.4vw;">소액투자 목돈 만들기</div>
-                            <div style="color: yellow;font-size: 2vw;">유출픽 재테크</div>
+                <div class="col-md-12 ml-5 mr-5 mb-5 mt-5">
+                    <div class="row">
+                        <div class="col-md-4 my-auto">
+                            <h2 class="label2" style="color: red;">소액투자 목돈 만들기</h2>
+                            <h2 class="label2" style="color: yellow;">유출픽 재테크</h2>
                         </div>
                         <div class="col-md-8">
                             <div class="form-group-lg" style="background-color: white;">
                                 <div class="input-group">
                                     <span class="input-group-addon">
-                                        <img src="{{asset('images/kakaotalk-icon.png')}}" height="100">
+                                        <img class="img-responsive" src="{{asset('images/kakaotalk-icon.png')}}" height="100">
                                     </span>
-                                    <label style="color:maroon;font-size: 2vw;text-align:left;padding-top:10px; padding-right:10px;">카톡<br>상담</label>
-                                    <span class="form-control" style="color:maroon;font-size: 3.15vw;text-align:left;padding-top:10px;padding-left:20px;">{{$settings->where('name','kakaotalk')->first()->value}}</span>
+                                    <h2 class="label1 my-auto">카톡<br>상담</h2>
+                                    <span class="form-control kakaotalkb">{{$settings->where('name','kakaotalk')->first()->value}}</span>
                                 </div>
                             </div>
                         </div>
