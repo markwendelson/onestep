@@ -114,8 +114,8 @@
 
                 <div class="row ml-5 mr-5 mb-5 mt-5">
                     <div class="col-md-4">
-                        <p style="color: red;font-size: 2.4em;">소액투자 목돈 만들기</p>
-                        <p style="color: yellow;font-size: 3em;">유출픽 재테크</p>
+                        <div style="color: red;font-size: 1.85vw;">소액투자 목돈 만들기</div>
+                        <div style="color: yellow;font-size: 3em;">유출픽 재테크</div>
                     </div>
                     <div class="col-md-8">
                         <div class="form-group-lg" style="background-color: white;">
