@@ -85,7 +85,7 @@
                         <span class="input-group-addon">
                             <img src="{{asset('images/kakaotalk-icon.png')}}" height="80">
                         </span>
-                        <a href="{{$settings->where('name','link')->first()->value ?? '#'}}" class="form-control" style="color:maroon;font-size: 3.5em;text-align:left;padding-top:15px;padding-left:20px;" target="_blank">오픈채팅방 입장</a>
+                        <a href="{{$settings->where('name','chat_room_link')->first()->value ?? '#'}}" class="form-control" style="color:maroon;font-size: 3.5em;text-align:left;padding-top:15px;padding-left:20px;" target="_blank">오픈채팅방 입장</a>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@
             <div class="col-md-10 mx-auto mt-4" style="display:block;color:white;">
                 <div class="row ml-5 mr-5">
                     <div class="col-md-4" style="background-color:rgb(4, 167, 18);">
-                        <a href="{{$settings->where('name','chat_room_link')->first()->value}}" class="form-control bg-transparent border-0 text-white" style="font-size: 3.5em;text-align:center;padding-top:15px;" target="_blank">회원가입</a>
+                        <a href="{{$settings->where('name','link')->first()->value}}" class="form-control bg-transparent border-0 text-white" style="font-size: 3.5em;text-align:center;padding-top:15px;" target="_blank">회원가입</a>
                     </div>
                     <div class="col-md-8">
                         <span class="form-control bg-transparent border-0 text-white" style="font-size: 3.25em;text-align:left;padding-top:15px;">가입코드 [ {{$settings->where('name','codename')->first()->value}} ] 필수기재</span>
