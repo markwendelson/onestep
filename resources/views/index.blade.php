@@ -64,6 +64,9 @@
         .codename {
             font-size: 1.8em!important;
         }
+        .kakaotalk {
+            font-size: 3em!important;
+        }
     }
 
     .label1 {
