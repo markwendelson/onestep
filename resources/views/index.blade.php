@@ -112,19 +112,21 @@
                     </div>
                 </div>
 
-                <div class="row ml-5 mr-5 mb-5 mt-5">
-                    <div class="col-md-4">
-                        <div style="color: red;font-size: 1.85vw;">소액투자 목돈 만들기</div>
-                        <div style="color: yellow;font-size: 3em;">유출픽 재테크</div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="form-group-lg" style="background-color: white;">
-                            <div class="input-group">
-                                <span class="input-group-addon">
-                                    <img src="{{asset('images/kakaotalk-icon.png')}}" height="100">
-                                </span>
-                                <label style="color:maroon;font-size: 2.75em;text-align:left;padding-top:10px; padding-right:10px;">카톡<br>상담</label>
-                                <span class="form-control" style="color:maroon;font-size: 4.5em;text-align:left;padding-top:10px;padding-left:20px;">{{$settings->where('name','kakaotalk')->first()->value}}</span>
+                <div class="col-md-12 col-sm-12">
+                    <div class="row ml-5 mr-5 mb-5 mt-5">
+                        <div class="col-md-4">
+                            <div style="color: red;font-size: 1.7vw;">소액투자 목돈 만들기</div>
+                            <div style="color: yellow;font-size: 2vw;">유출픽 재테크</div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group-lg" style="background-color: white;">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <img src="{{asset('images/kakaotalk-icon.png')}}" height="100">
+                                    </span>
+                                    <label style="color:maroon;font-size: 2vw;text-align:left;padding-top:10px; padding-right:10px;">카톡<br>상담</label>
+                                    <span class="form-control" style="color:maroon;font-size: 3.15vw;text-align:left;padding-top:10px;padding-left:20px;">{{$settings->where('name','kakaotalk')->first()->value}}</span>
+                                </div>
                             </div>
                         </div>
                     </div>
