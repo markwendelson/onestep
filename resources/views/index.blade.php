@@ -30,12 +30,12 @@
 
 <div class="container">
     <div class="col-md-8 mx-auto">
-        <nav class="navbar navbar-light bg-light" style="background-color: teal!important">
+        {{-- <nav class="navbar navbar-light bg-light" style="background-color: teal!important">
             <div class="container-fluid pt-2 pb-2">
                 <a class="navbar-brand" href="#" style="font-size:4em; color:white;">{{$settings->where('name','branch')->first()->value}} </a>
                 <a class="right" href="{{$settings->where('name','link')->first()->value ?? '#'}}" target="_blank" style="font-size:4em; color:white;">회원가입</a>
             </div>
-        </nav>
+        </nav> --}}
 
         <div class="col-md-12 text-center pt-5" style="display:block;background:url(images/img_bg.png) no-repeat; background-size:cover;">
 
@@ -92,8 +92,8 @@
 
             <div class="col-md-10 mx-auto mt-4" style="display:block;color:white;">
                 <div class="row ml-5 mr-5">
-                    <div class="col-md-4">
-                        <a href="{{$settings->where('name','chat_room_link')->first()->value}}" class="form-control" style="color:rgb(0, 128, 58);font-size: 3.5em;text-align:center;padding-top:15px;" target="_blank">회원가입</a>
+                    <div class="col-md-4" style="background-color:rgb(4, 167, 18);">
+                        <a href="{{$settings->where('name','chat_room_link')->first()->value}}" class="form-control bg-transparent border-0 text-white" style="font-size: 3.5em;text-align:center;padding-top:15px;" target="_blank">회원가입</a>
                     </div>
                     <div class="col-md-8">
                         <span class="form-control bg-transparent border-0 text-white" style="font-size: 3.25em;text-align:left;padding-top:15px;">가입코드 [ {{$settings->where('name','codename')->first()->value}} ] 필수기재</span>
@@ -118,13 +118,13 @@
                         <p style="color: yellow;font-size: 3em;">유출픽 재테크</p>
                     </div>
                     <div class="col-md-8">
-                        <div class="form-group-lg" style="background-color: white;margin-top:10px;">
+                        <div class="form-group-lg" style="background-color: white;">
                             <div class="input-group">
                                 <span class="input-group-addon">
-                                    <img src="{{asset('images/kakaotalk-icon.png')}}" height="80">
+                                    <img src="{{asset('images/kakaotalk-icon.png')}}" height="100">
                                 </span>
-                                <label style="color:maroon;font-size: 1.75em;text-align:left;padding-top:10px; padding-right:10px;">카톡<br>상담</label>
-                                <span class="form-control" style="color:maroon;font-size: 3.5em;text-align:left;padding-top:10px;padding-left:20px;">{{$settings->where('name','kakaotalk')->first()->value}}</span>
+                                <label style="color:maroon;font-size: 2.75em;text-align:left;padding-top:10px; padding-right:10px;">카톡<br>상담</label>
+                                <span class="form-control" style="color:maroon;font-size: 4.5em;text-align:left;padding-top:10px;padding-left:20px;">{{$settings->where('name','kakaotalk')->first()->value}}</span>
                             </div>
                         </div>
                     </div>
